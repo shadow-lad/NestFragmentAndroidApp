@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_one_graph"
+    app:startDestination="@id/subFragmentThree">
+    <fragment
+        android:id="@+id/subFragmentThree"
+        android:name="com.example.fragmenttest.fragment2.SubFragmentThree"
+        android:label="fragment_sub_three"
+        tools:layout="@layout/fragment_sub_three" >
+        <action
+            android:id="@+id/action_subFragmentThree_to_subFragmentFour"
+            app:destination="@id/subFragmentFour" />
+    </fragment>
+    <fragment
+        android:id="@+id/subFragmentFour"
+        android:name="com.example.fragmenttest.fragment2.SubFragmentFour"
+        android:label="fragment_sub_four"
+        tools:layout="@layout/fragment_sub_four" />
+</navigation>
